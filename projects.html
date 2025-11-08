@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Afrina Noor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header container">
+    <a class="logo" href="index.html">AN</a>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="achievements.html" class="nav-link">Achievements</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      <button id="navToggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+
+      <!-- Filter Buttons -->
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projectsGrid" class="projects-grid">
+
+        <!-- Mobile Project -->
+        <article class="project" data-type="mobile">
+          <img src="assets/images/Doc App.png" alt="Doctor Appointment App">
+          <h4>Doctor Appointment System</h4>
+          <p>Tech: Flutter, Firebase, RASA, REST API</p>
+          <div class="project-links">
+            <a href="https://live-demo-link.com" target="_blank" class="project-btn">Live Demo</a>
+            <a href="https://github.com/AfrinaNoor/DoctorAppointment" target="_blank" class="project-btn">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Web Project -->
+        <article class="project" data-type="web">
+          <img src="assets/project2.png" alt="Netflix Clone">
+          <h4>Netflix Clone</h4>
+          <p>Tech: HTML, CSS, JavaScript</p>
+          <div class="project-links">
+            <a href="https://live-demo-link.com" target="_blank" class="project-btn">Live Demo</a>
+            <a href="https://github.com/AfrinaNoor/NetflixClone" target="_blank" class="project-btn">GitHub</a>
+          </div>
+        </article>
+
+        <!-- UI/UX Project -->
+        <article class="project" data-type="design">
+          <img src="assets/project3.png" alt="UI Case Study">
+          <h4>UI Case Study</h4>
+          <p>Tech: Figma, Flutter Components</p>
+          <div class="project-links">
+            <a href="https://live-demo-link.com" target="_blank" class="project-btn">Live Demo</a>
+            <a href="https://github.com/AfrinaNoor/UICaseStudy" target="_blank" class="project-btn">GitHub</a>
+          </div>
+        </article>
+
+        <!-- You can add more project cards below in the same structure -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearProjects"></span> — Afrina Noor</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Contact — Afrina Noor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header container">
+      <a class="logo" href="index.html">AN</a>
+      <nav id="mainNav" class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+        <button id="navToggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h1 class="section-title">Get in Touch</h1>
+        <p class="section-subtitle">
+          Have a project in mind or just want to say hello? Fill out the form below, and I’ll get back to you soon!
+        </p>
+
+        <div class="contact-grid">
+          <!-- ✅ Formspree Form Integration -->
+          <form
+            action="https://formspree.io/f/xovyawla"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-row">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="_replyto"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject (optional)"
+            />
+
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <h3>Reach Me</h3>
+            <p>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:tasmimafrin1189@gmail.com"
+                >tasmimafrin1189@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa fa-phone"></i> +8801611802850
+            </p>
+            <p>
+              <i class="fa fa-map-marker-alt"></i> Chattogram, Bangladesh
+            </p>
+
+            <div class="socials stacked">
+              <a
+                href="https://www.linkedin.com/in/afrina-noor-3a0675213/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/AfrinaNoor" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/afrina.noor.2025/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="yearContact"></span> — Afrina Noor</p>
+      </div>
+    </footer>
+  </body>
+</html>

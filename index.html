@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Afrina Noor — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <header class="site-header container">
+      <a class="logo" href="index.html">AN</a>
+
+      <nav id="mainNav" class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+          🌙
+        </button>
+        <button
+          id="navToggle"
+          class="icon-btn mobile-only"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO / HOME -->
+      <section id="home" class="hero container">
+        <div class="hero-left">
+          <h1>Hello — I'm <span class="accent">Afrina Noor</span></h1>
+
+          <p class="intro">
+            A passionate Computer Science graduate focused on building intuitive
+            and beautiful mobile and web experiences. I blend creativity with
+            technical expertise to design, develop, and deliver meaningful
+            digital products.
+          </p>
+
+          <!-- Download Resume Button -->
+          <div class="download-btn-container">
+            <a href="Afrina_Noar_Resume.pdf" class="download-btn" download
+              >Download Resume</a
+            >
+          </div>
+
+          <!-- Social Links -->
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/afrina-noor-3a0675213/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/AfrinaNoor"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/afrina.noor.2025/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="mailto:tasmimafrin1189@gmail.com"
+              class="contact-icon"
+              onclick="window.open('https://mail.google.com/mail/?view=cm&to=tasmimafrin1189@gmail.com', '_blank'); return false;"
+            >
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-home">
+            <a href="tel:+8801611802850" class="contact-icon">
+              <i class="fas fa-phone"></i> +8801611802850
+            </a>
+            <span class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i> Chattogram, Bangladesh
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card">
+            <img
+              src="assets/images/profile.jpeg"
+              alt="Profile"
+              class="profile-img"
+            />
+            <p class="lead">
+              Flutter App Developer • UI Designer • Web Developer
+            </p>
+            <p class="profile-experience">2+ Internships | 7+ Projects</p>
+          </div>
+        </div>
+
+        <!-- Floating Circles -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            I’m a dedicated and detail-oriented Flutter Developer and UI
+            Designer passionate about crafting seamless digital experiences.
+            Having worked on multiple real-world projects and internships, I’m
+            experienced in Flutter, Firebase, REST APIs, and modern web design.
+            I’m constantly learning and evolving to become a full-stack
+            developer, with a deep interest in creating apps that help people in
+            their daily lives.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> — Afrina Noor • Built with ❤</p>
+      </div>
+    </footer>
+  </body>
+</html>

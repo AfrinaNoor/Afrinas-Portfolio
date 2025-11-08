@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Achievements — Afrina Noor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header container">
+    <a class="logo" href="index.html">AN</a>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="achievements.html" class="nav-link">Achievements</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      <button id="navToggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1 class="section-title">Achieved Certificates</h1>
+      <p class="muted">Click thumbnails to view larger.</p>
+
+      <div class="achievements-grid">
+        <div class="ach-item"><img src="assets/images/intern certificate.jpeg" alt="Intern Certificate"><p>Mobile App Development Internship</p></div>
+        <div class="ach-item"><img src="assets/images/ceritificate.jpeg" alt="Certificate"><p>Mobile App Development Training</p></div>
+        <div class="ach-item"><img src="assets/images/Applink Certificate.png" alt="Applink"><p>Banglalink Applink Idea Contest</p></div>
+        <div class="ach-item"><img src="assets/images/certificate1.jpeg" alt="Certificate 1"><p>Complete Web Development Course</p></div>
+        <div class="ach-item"><img src="assets/images/certificate2.jpeg" alt="Certificate 2"><p>Python Programming Workshop</p></div>
+        <div class="ach-item"><img src="assets/images/certificate3.jpeg" alt="Certificate 3"><p>UI/UX Workshop Certificate</p></div>
+        <div class="ach-item"><img src="assets/images/certificate4.jpeg" alt="Certificate 4"><p>ICISET Event</p></div>
+        <div class="ach-item"><img src="assets/images/certificate5.jpeg" alt="Certificate 5"><p>Drone Workshop</p></div>
+        <div class="ach-item"><img src="assets/images/YSSE Intern.jpeg" alt="Certificate 6"><p>YSSE Admin & HR Internship</p></div>
+        <div class="ach-item"><img src="assets/images/YSSE IT.jpeg" alt="YSSE IT Manager"><p>YSSE IT Manager Role</p></div>
+        <div class="ach-item"><img src="assets/images/LEAD certificate.png" alt="LEAD Academy Certificate"><p>Leadership and Management Course</p></div>
+        <div class="ach-item"><img src="assets/images/Email writing.jpeg" alt="Email Writing Certificate"><p>Professional Email Writing Workshop</p></div>
+      </div>
+
+      <!-- modal for viewing certificate -->
+      <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearAchievements"></span> — Afrina Noor</p>
+    </div>
+  </footer>
+</body>
+</html>
